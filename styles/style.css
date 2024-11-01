@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-primario: #0A3871;
+    --color-secundario: #343A40;
+    --color-terciario: #072B61;
+    --color-cuaternario: #F3F5FC;
+    --color-quinteario: #1f851f;
+    --color-sexteario: #87bdff36;
+    --color-hover: #31363F;
+
+    --color-white: #FFFFFF;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--color-cuaternario);
+    color: var(--color-primario);
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion__contenido {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.seccion__titulo__logo {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.presentacion__logo {
+    width: 15%;
+    height: auto;
+    margin: 3% 5%;
+    margin-bottom: 0%;
+}
+
+.Logo {
+    max-width: 50%;
+    max-height: auto;
+    width: auto;
+    height: auto;
+}
+
+.presentacion__titulo {
+    display: flex;
+    font-size: 3rem;
+    font-family: var(--fuente-krona);
+    align-self: center;
+    margin: 1%;
+}
+
+.presentacion_subtitulo {
+    font-size: 1.4rem;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    align-self: center;
+    margin: 1%;
+    text-align: center;
+    width: 60%;
+    height: 5%;
+    color: var(--color-secundario);
+}
+
+.container {
+    background-color: var(--color-white);
+    border: 2px solid none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    min-width: 30%;
+    width: 30%;
+    height: 30%;
+    min-height: 30%;
+    max-height: 30%;
+    margin-bottom: 3%;
+    padding: 5%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    font-size: 1.2rem;
+    font-family: var(--fuente-inter);
+    color: var(--color-primario);
+    font-weight: 600;
+}
+
+label {
+    font-size: 1.5rem;
+    font-family: var(--fuente-inter);
+    color: var(--color-primario);
+    font-weight: 600;
+    text-align: center;
+}
+
+form {
+    max-width: 70%;
+    min-width: 70%;
+    width: 70%;
+    height: 100%;
+    margin-bottom: 3%;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form select {
+    font-size: 1rem;
+    font-family: var(--fuente-inter);
+    color: var(--color-secundario);
+    margin-top: 2%;
+    padding: 3%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: var(--color-sexteario);
+    border: none;
+    justify-content: center;
+    text-align: center;
+}
+
+form input {
+    font-size: 1rem;
+    font-family: var(--fuente-inter);
+    color: var(--color-secundario);
+    margin-top: 2%;
+    padding: 3%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: var(--color-sexteario);
+    border: none;
+    justify-content: center;
+}
+
+.resultados p {
+    font-family: var(--fuente-inter); /* Fuente de los párrafos */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    color: var(--color-secundario); /* Color del texto */
+    margin: 5px 0; /* Espaciado vertical entre párrafos */
+}
+
+
+button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 2%;
+    padding: 3%; /* Padding directo en el botón */
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    border: none; /* Sin borde */
+    background-color: var(--color-terciario);
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 7px; /* Bordes redondeados */
+    margin-top: 5%;
+}
+
+button input:hover {
+    background-color: var(--color-hover);
+}
+
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+}
+
+li {
+    font-family: var(--fuente-inter); /* Fuente de los párrafos */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    color: var(--color-secundario); /* Color del texto */
+    margin: 5px 0; /* Espaciado vertical entre párrafos */
+}
+
+.resultados {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.resultados h2{
+    font-family: var(--fuente-krona);
+    color: var(--color-primario); /* Color del título */
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    text-align: center;
+}
+
+.resultados p {
+    font-family: var(--fuente-inter); /* Fuente de los párrafos */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    color: var(--color-secundario); /* Color del texto */
+    margin: 5px 0; /* Espaciado vertical entre párrafos */
+}
+
+.resultados p strong {
+    color: var(--color-secundario);
+}
+
+.resultadoscontainer {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    text-decoration: none;
+    background-color: var(--color-terciario);
+    padding: 3%;
+    color: var(--color-cuaternario);
+    text-align: center;
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    height: 10%;
+    width: 100%;
+    align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        padding: 5%;
+        gap: 2rem; 
+        align-items: center; /* Centra los elementos dentro del contenedor */
+    }
+
+    form {
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+        padding: 2rem;
+        max-width: 90%; 
+        margin: 0 auto; 
+        justify-content: center;
+    }
+
+    button {
+        width: 100%; /* Asegura que el checkbox y el botón ocupen todo el ancho */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5rem; /* Añade espacio para evitar que se encimen */
+    }
+    
+    button input {
+        width: 100%; /* Asegura que el botón sea responsivo */
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        padding: 2rem;
+        width: 100%;
+        margin: 2rem auto; /* Centra el footer */
+
+    }
+}
